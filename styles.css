@@ -1,0 +1,97 @@
+html, body {
+	height: 100%;
+	overflow: hidden;
+}
+body {
+	color: #fff;
+	padding: 0;
+	font-family: 'Helvetica Neue',
+						 'Arial Nova',
+							Helvetica,
+							Arial,
+							sans-serif;
+	}
+
+#container {
+	height: 100%;
+	margin: 25px;
+	}
+#text {
+	float: left;
+	width: 45%;
+	min-height: 90%;
+	}
+#words {
+	display: none;
+}
+#image {
+	float: right;
+	width: 50%;
+	padding: 0px;
+	min-height: 90%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	}
+#buttons {
+	margin-bottom: 25px;
+	}
+
+@media screen and (max-width: 600px) {
+	html, body {
+		overflow: visible;
+		}
+  #image, #text {
+    width: 100%;
+		margin-bottom: 25px;
+	}
+	#image {
+		min-height: 70%;
+	}
+}
+
+.title {
+	margin: 5px 0;
+	font-size: 2.5em;
+	font-weight: normal;
+	line-height: 1;
+	}
+.title a {
+	color: #fff;
+	text-decoration: none;
+}
+.date {
+	margin: 0;
+	font-size: 1em;
+	font-weight: normal;
+	}
+.artist {
+	margin: 0;
+	font-size: 1.5em;
+	font-weight: normal;
+}
+.provenance {
+	border-top: 1px solid #ccc;
+	padding-top: 10px;
+	margin-top: 20px;
+	color: #ccc;
+	font-size: 0.75em;
+	}
+.credit {
+	font-size: 0.75em;
+	color: #ccc;
+	line-height: 1.5;
+	}
+.provenance a,.credit a {
+	color: #ccc;
+	text-decoration: none;
+	}
+.provenance a:hover,.credit a:hover {
+	text-decoration: underline;
+	}
+.more, .refresh {
+	width: 25px;
+	height: 35px;
+	margin-right: 10px;
+	cursor: pointer;
+}
